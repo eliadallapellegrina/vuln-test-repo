@@ -10,7 +10,7 @@ static int validate_input(const uint8_t *data, size_t size) {
 
 int process_data(const uint8_t *data, size_t size) {
     if (!validate_input(data, size)) return 0;
-    if (size < 4) return 0;
+    if (size < 3) return 0;
     if (data[0] == 'B' &&
         data[1] == 'U' &&
         data[2] == 'G' &&
